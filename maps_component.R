@@ -52,6 +52,8 @@ data$component[which(
   data$benthic_aphia %in% TRUE & !(data$pelagic_aphia %in% TRUE)
 )] <- "benthic"
 
+data %>% group_by(component) %>% summarize(records = n())
+
 # generate grid
 
 dggs <- dgconstruct(projection = "ISEA", area = 75000, resround = "down")
