@@ -7,9 +7,9 @@ library(scales)
 
 # parameters
 
-startdepth <- 2000
+startdepth <- 3000
 enddepth <- 6000
-var <- "species" # which variable to plot
+var <- "records" # which variable to plot
 folder <- "maps_overall" # output folder
 
 # fetch data from OBIS
@@ -50,4 +50,4 @@ ggplot() +
   ylab("latitude")
 
 dir.create(folder)
-ggsave(paste0(folder, "/", var, "_", startdepth, "_", enddepth, ".png"), scale = 1.8, dpi = 900)
+ggsave(paste0(folder, "/", var, "_", startdepth, "_", enddepth, ".png"), scale = 1.2, dpi = 600, width = 12, height = 6)

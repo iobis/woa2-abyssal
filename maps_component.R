@@ -85,4 +85,4 @@ ggplot() +
   ylab("latitude")
 
 dir.create(folder)
-ggsave(paste0(folder, "/", comp, "_", var, "_", startdepth, "_", enddepth, ".png"), scale = 1.8, dpi = 900)
+ggsave(paste0(folder, "/", comp, "_", var, "_", startdepth, "_", enddepth, ".png"), scale = 1.2, dpi = 600, width = 12, height = 6)
